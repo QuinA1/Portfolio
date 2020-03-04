@@ -1,0 +1,1430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Adventure Game Code</title>
+  </head>
+  <body>
+
+    <a href="projects.html">Back</a>
+
+    <h1>This is my code for my game</h1>
+<p># -*- coding: utf-8 -*- <br>
+#Berthalamule<br>
+import random<br>
+import time<br>
+health = 300<br>
+print('[Press enter/return too skip dialogue]')<br>
+print('Welcome to the world of Berthala but everyone calls it Berthum.')<br>
+next1 = input('')<br>
+print('In this world you can be an ARCHER a WARRIOR or a MAGE.')<br>
+next1 = input('')<br>
+print('But before that')<br>
+time.sleep(1)<br>
+print('Please tell me...')<br>
+while True:<br>
+ name = input('What is your name? &gt; ') <br>
+ print(name, 'is it (y/n)')<br>
+ response = input('&gt; ')<br>
+ if response == 'y':<br>
+ print('ok then', name) <br>
+ print('are you male or female?')<br>
+ break<br>
+ elif response =='n':<br>
+ print('Oh then are you male or female')<br>
+while True:<br>
+ gender = input('&gt;')<br>
+ gender = (gender.lower())<br>
+ if gender == 'male':<br>
+ print('So you are male?')<br>
+ response = input('(y/n) &gt; ')<br>
+ if response == 'y':<br>
+ gender = 'male'<br>
+ break<br>
+ elif response == 'n':<br>
+ print('Oh then are you male or female')<br>
+ elif gender == 'female':<br>
+ print('So you are female?')<br>
+ response = input('(y/n) &gt; ')<br>
+ if response == 'y':<br>
+ gender = 'female'<br>
+ break<br>
+ elif response =='n':<br>
+ print('Oh then are you male or female')<br>
+ elif response == 'n':<br>
+ print('Oh then?')<br>
+while True:<br>
+ if gender == 'male':<br>
+ print('Sir what class would you like too be?')<br>
+ break<br>
+ elif gender == 'female':<br>
+ print('Mam what class would you like too be?')<br>
+ break</p>
+
+<p>print('An archer, warrior, or mage?')<br>
+while True:<br>
+ class1 = input('&gt; ')<br>
+ if class1 == 'archer':<br>
+ print('Here is an old bow.')<br>
+ print('')<br>
+ print('(1)[Do I need arrows?]')<br>
+ print('(2)[I DEMAND YOU GIVE ME ARROWS RIGHT NOW!]')<br>
+ print('')<br>
+ break<br>
+ if class1 == 'mage':<br>
+ print('Here is your staff')<br>
+ print('')<br>
+ print('(1)[Do I need a spell book?]')<br>
+ print('(2)[I DEMAND YOU GIVE ME A SPELL BOOK!]')<br>
+ break<br>
+ if class1 == 'warrior':<br>
+ print('Here is a rusty sword .')<br>
+ print('')<br>
+ print('(1)[Do I need a shield?]')<br>
+ print('(2)[I DEMAND YOU GIVE ME A SHIELD!]')<br>
+ break<br>
+while True:<br>
+ response = input('&gt; ')<br>
+ if response == '1':<br>
+ if class1 == 'mage':<br>
+ item = 'old spell book.'<br>
+ elif class1 == 'archer':<br>
+ item = 'quiver of copper tiped arrows.'<br>
+ elif class1 == 'warrior':<br>
+ item = 'rusty shield.'<br>
+ print('OH I almost forgot')<br>
+ time.sleep(1)<br>
+ print('He hands you a',item)<br>
+ break<br>
+ elif response == '2':<br>
+ if class1 == 'mage':<br>
+ item = 'old spell book.'<br>
+ elif class1 == 'archer':<br>
+ item = 'quiver of copper tiped arrows.'<br>
+ elif class1 == 'warrior':<br>
+ item = 'rusty shield.'<br>
+ print('Well since you asked so kindly...')<br>
+ print('(He throws the',item,'at you.')<br>
+ time.sleep(1)<br>
+ health = 290<br>
+ print(name,'has',health,'health')<br>
+ print('take 10 damage')<br>
+ break<br>
+print('Ok now fight this goblin.')</p>
+
+<p>print('')<br>
+print('')<br>
+print('')</p>
+
+<p><br>
+print(' (\'^\') |{&lt;\'}')<br>
+print(' /|_|\ T-{_}\\')<br>
+print(' | | | | ')<br>
+print('----------------------------------------------------------------')<br>
+print('')<br>
+print('')</p>
+
+<p></p>
+
+<p></p>
+
+<p>while True:<br>
+ print('You have to say [fight] to fight the goblin.')<br>
+ combat = input('&gt; ')<br>
+ if combat == 'fight':<br>
+ break<br>
+goblin_health = 80<br>
+while True:<br>
+ if class1 == 'archer':<br>
+ if goblin_health &gt; 0:<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('You fire an arrow')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} ---&gt; T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')</p>
+
+<p> damage = random.randint(0,24)<br>
+ print('You deal', damage,'damage')<br>
+ goblin_health = goblin_health - damage<br>
+ print('The goblin has',goblin_health,'health left.')<br>
+ time.sleep(1)<br>
+ if goblin_health &lt;= 0:<br>
+ print('The goblin is dead.')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' YOU WIN!')<br>
+ print(' (\'^\') ')<br>
+ print(' \|_|/ __¬ ')<br>
+ print(' | | ==[ ]{}')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ break<br>
+ elif goblin_health &gt; 0:<br>
+ goblin_damage = random.randint(0,15)<br>
+ <br>
+ <br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ #next^<br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ #input damage amount here!!!!<br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ time.sleep(0.05)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print(' /|_|-|} T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ <br>
+ print('The goblin deals',goblin_damage,'damage')<br>
+ health = health - goblin_damage<br>
+ print('You have', health, 'health left')<br>
+ time.sleep(1) <br>
+ <br>
+ elif goblin_health &lt;= 0:<br>
+ print('The goblin is defsdfsfsdfdaad')<br>
+ <br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' YOU WIN!')<br>
+ print(' (\'^\') ')<br>
+ print(' \|_|/ __¬ ')<br>
+ print(' | | ==[ ]{}')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ <br>
+ break<br>
+ #print('You gain 45exp')<br>
+ if class1 == 'mage':<br>
+ if goblin_health &gt; 0:<br>
+ print('You cast a small firebolt')<br>
+ <br>
+ <br>
+ print('You ready your staff.')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ if goblin_health &lt; 0:<br>
+ goblin_health = 0<br>
+ print( health,'health',' ',goblin_health,'health')<br>
+ print(' _')<br>
+ print(' _---_@')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print('[*]|_|-| T-{_}\\')<br>
+ print(' | | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ if goblin_health &lt; 0:<br>
+ goblin_health = 0<br>
+ print( health,'health',' ',goblin_health,'health')<br>
+ print(' _')<br>
+ print(' _---_')<br>
+ print(' (\'^\') |{&lt;\'}')<br>
+ print('[*]|_|-====@ ## T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(1)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ if goblin_health &lt; 0:<br>
+ goblin_health = 0<br>
+ print('')<br>
+ print( health,'health',' ',goblin_health,'health')<br>
+ print(' _')<br>
+ print(' _---_ # #')<br>
+ print(' (\'^\') #|{&lt;\'}#')<br>
+ print('[*]|_|-====@ T-{_}\\#')<br>
+ print(' | | #| | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ <br>
+ <br>
+ damage = random.randint(0,14)<br>
+ print('You deal', damage,'damage')<br>
+ goblin_health = goblin_health - damage<br>
+ print('The goblin has',goblin_health,'health left.')<br>
+ time.sleep(1)<br>
+ <br>
+ print('Your firebolt deals fire damage.')<br>
+ fire_damage = 5<br>
+ goblin_health = goblin_health - fire_damage<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ if goblin_health &lt; 0:<br>
+ goblin_health = 0<br>
+ print( health,'health',' ',goblin_health,'health')<br>
+ print(' _')<br>
+ print(' _---_ # #')<br>
+ print(' (\'^\') #|{&lt;\'}#')<br>
+ print('[*]|_|-====@ T-{_}\\#')<br>
+ print(' | | #| | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ if goblin_health &lt;= 0:<br>
+ print('The goblin is dead.')<br>
+ break<br>
+ elif goblin_health &gt; 0:<br>
+ print('goblin\'s health is at', goblin_health)<br>
+ goblin_damage = random.randint(0,15)<br>
+ print('The goblin deals',goblin_damage,'damage')<br>
+ health = health - goblin_damage<br>
+ print('You have', health, 'health left')<br>
+ time.sleep(1)<br>
+ if class1 == 'warrior':<br>
+ if 0 == 0:<br>
+ if goblin_health &gt; 0:<br>
+ print('You swing your sword.')<br>
+ <br>
+ <br>
+ print('You charge your sword.')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')</p>
+
+<p> print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' ',goblin_health,'health')<br>
+ print(' |')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')</p>
+
+<p> print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' ',goblin_health,'health')<br>
+ print(' |')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')</p>
+
+<p> print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' ',goblin_health,'health')<br>
+ print(' |')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')</p>
+
+<p> print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' ',goblin_health,'health')<br>
+ print(' |')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')</p>
+
+<p> print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' ',goblin_health,'health')<br>
+ print(' |')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')</p>
+
+<p> print('')<br>
+ print('')<br>
+ print(' ',goblin_health,'health')<br>
+ print(' |')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')</p>
+
+<p> print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' ',goblin_health,'health')<br>
+ print(' |')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')</p>
+
+<p> print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' ',goblin_health,'health')<br>
+ print(' |')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')</p>
+
+<p> print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' ',goblin_health,'health')<br>
+ print(' |')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')</p>
+
+<p> print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' ',goblin_health,'health')<br>
+ print(' |')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')</p>
+
+<p> print('')<br>
+ print('')<br>
+ print(' ',goblin_health,'health')<br>
+ print(' |')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')</p>
+
+<p> print('')<br>
+ print('')<br>
+ print('')<br>
+ print('You swing your sword.')<br>
+ print(' /')<br>
+ print(' (\'^\') / |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p> print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ damage = random.randint(0,27)<br>
+ print('You deal', damage,'damage')<br>
+ print(' |')<br>
+ print(' (\'^\')| |{&lt;\'}')<br>
+ print(' O|_|-@ T-{_}\\')<br>
+ print(' | | | | ')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ time.sleep(.5)<br>
+ <br>
+ </p>
+
+<p> goblin_health = goblin_health - damage<br>
+ if goblin_health &lt;= 0:<br>
+ print('The goblin is dead.')<br>
+ <br>
+ <br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' YOU WIN!')<br>
+ print(' (\'^\') ')<br>
+ print(' \|_|/ __¬ ')<br>
+ print(' | | ==[ ]{}')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ <br>
+ break<br>
+ elif goblin_health &gt; 0:<br>
+ <br>
+ print('The goblin has',goblin_health,'health left.')<br>
+ time.sleep(1)<br>
+ <br>
+ goblin_damage = random.randint(0,13) #The shield block 2 damage!<br>
+ print('The goblin deals',goblin_damage,'damage')<br>
+ health = health - goblin_damage<br>
+ print('You have', health, 'health left')<br>
+ time.sleep(1)<br>
+ <br>
+ <br>
+ elif goblin_health &lt;= 0:<br>
+ print('The goblin is dead')<br>
+ <br>
+ <br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print('')<br>
+ print(' YOU WIN!')<br>
+ print(' (\'^\') ')<br>
+ print(' \|_|/ __¬ ')<br>
+ print(' | | ==[ ]{}')<br>
+ print('----------------------------------------------------------------')<br>
+ print('')<br>
+ print('')<br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ break<br>
+ elif health == 0:<br>
+ print('You are dead.')<br>
+ break<br>
+ <br>
+ <br>
+while True:<br>
+ print('')<br>
+ print('')<br>
+ print('Congrats on defeating your first enemy.')<br>
+ next1 = input('')<br>
+ print('But I mean that is one of the weakest mobs in the game...')<br>
+ time.sleep(0.1)<br>
+ print('I MEAN IT\'S ONE OF THE WEAKEST MONSTERS IN THIS WORLD!!')<br>
+ next1 = input('')<br>
+ print('*mumble* saved it. *mumble* ')<br>
+ next1 = input('')<br>
+ print('(' + name + ')', 'What do you mean...saved what.')<br>
+ break</p>
+
+<p>while True:<br>
+ print('')<br>
+ print('Do you want to go to the town nearbye')<br>
+ nex1 = input('')<br>
+ print('[Berkanal]') #Warm place<br>
+ # print('[Gorksanal]') #Equator Place<br>
+ # print('[Sarkanal]') #Cold place<br>
+ town1 = input('(y/n) &gt; ')<br>
+ if town1 == 'y':<br>
+ print('Lets go to my carriage.')<br>
+ time.sleep(1)<br>
+ print('...')<br>
+ time.sleep(1)<br>
+ print('...')<br>
+ time.sleep(1)<br>
+ print('...')<br>
+ break<br>
+ elif town1 == 'n':<br>
+ print('Well then what do you suggest we do?')<br>
+ <br>
+while True:<br>
+ if town1 == 'y':<br>
+ print('After the long carriage ride')<br>
+ print(' You healed', 300 - health, 'health')<br>
+ health = 300<br>
+ print('(' + name + ')', 'is at', health, 'health.')<br>
+ break<br>
+ elif town1 == 'n':<br>
+ print('(1)[Go hunting]')<br>
+ print('(2)[Go to town anyways]')<br>
+ choice = input('&gt; ')<br>
+ if choice == '1':<br>
+ print('Ok do you want to stay here in this [(1)cave], or do you want to go to the [(2)forest]?')</p>
+
+<p> choice = input('&gt; ')<br>
+ if choice == '1':<br>
+ break<br>
+ <br>
+ elif choice == '2':<br>
+ break <br>
+ elif choice == '2':<br>
+ print('Okay then lets go to my carriage.')<br>
+ time.sleep(1)<br>
+ print('...')<br>
+ time.sleep(1)<br>
+ print('...')<br>
+ time.sleep(1)<br>
+ print('...')<br>
+ break<br>
+while True:<br>
+ if town1 == 'y' or choice == '2':<br>
+ print('When you arrive there the [person] says to you')<br>
+ print('Here we are')<br>
+ print('ahhh')<br>
+ print('/(\'\')\\')<br>
+ time.sleep(1)<br>
+ print('see ya.')<br>
+ print('')<br>
+ break<br>
+#while True:<br>
+ # print('')</p>
+    <br>
+  </body>
+</html>
